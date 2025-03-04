@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Додаємо плавну прокрутку */
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.image-banner {
+    width: 100%;
+    height: 250px; /* Встановлюємо висоту стрічки */
+    background-image: url('images/top.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #555;
+}
+.container {
+    padding: 20px;
+}
+.gallery-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.image-gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.map-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+#timeline-embed {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+.explorer {
+    margin-bottom: 20px;
+}
+.explorer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.explorer p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+#toggle-map {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#toggle-map:hover {
+    background-color: #555;
+}

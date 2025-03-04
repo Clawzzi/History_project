@@ -4,37 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Великі географічні відкриття</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 </head>
 <body>
     <header>
-        <h1>Великі географічні відкриття</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="history.html">Історія</a></li>
-                <li><a href="map.html">Інтерактивна карта</a></li>
-                <li><a href="economy.html">Вплив на економіку</a></li>
-                <li><a href="quiz.html">Тестування</a></li>
-                <li><a href="resources.html">Ресурси</a></li>
-                <li><a href="forum.html">Форум</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
-        </nav>
+        <h1>Великі географічні відкриття та їх вплив на світову економіку</h1>
     </header>
-
-    <section id="home">
-        <h2>Головна сторінка</h2>
-        <p>Коротка інтригуюча інформація про тему великих географічних відкриттів та їх вплив на світову економіку.</p>
-        <div class="slider">
-            <!-- Слайдер з основними подіями відкриттів -->
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Великі географічні відкриття</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+    <div class="image-banner"></div>
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#impact">Економічний вплив</a>
+        <a href="#map">Інтерактивна карта</a>
+        <a href="#timeline">Таймлайн</a>
+        <a href="#explorers">Відомі дослідники</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Головна сторінка</h2>
+            <p>Великі географічні відкриття - це період в історії, коли європейські дослідники відкривали нові землі та морські шляхи. Ці відкриття мали значний вплив на світову економіку, культуру та політику.</p>
+        </section>
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <p class="gallery-title">Так ШІ бачить Великі географічні відкриття:</p>
+            <div class="image-gallery">
+                <img src="images/picture1.png" alt="Опис зображення 1">
+                <img src="images/picture2.png" alt="Опис зображення 2">
+                <img src="images/picture3.png" alt="Опис зображення 3">
+                <img src="images/picture4.png" alt="Опис зображення 4">
+                <img src="images/picture5.png" alt="Опис зображення 5">
+                <img src="images/picture6.png" alt="Опис зображення 6">
+                <!-- Додайте більше зображень за потреби -->
+            </div>
+        </section>
+        <section id="impact">
+            <h2>Економічний вплив</h2>
+            <p>Великі географічні відкриття сприяли розвитку торгівлі, колонізації та обміну культурними цінностями. Це призвело до зростання економік європейських країн та створення глобальної економічної системи.</p>
+        </section>
+        <section id="map">
+            <h2>Інтерактивна карта</h2>
+            <button id="toggle-map">Показати/Сховати карту</button>
+            <div id="map" class="map-container"></div>
+        </section>
+        <section id="timeline">
+            <h2>Таймлайн</h2>
+            <div id="timeline-embed"></div>
+        </section>
+        <section id="explorers">
+            <h2>Відомі дослідники</h2>
+            <div class="explorer">
+                <h3>Христофор Колумб</h3>
+                <p>Христофор Колумб (1451-1506) - італійський мореплавець, який відкрив Америку у 1492 році. Його подорожі проклали шлях до європейської колонізації Америки.</p>
+            </div>
+            <div class="explorer">
+                <h3>Васко да Гама</h3>
+                <p>Васко да Гама (1460-1524) - португальський мореплавець, який відкрив морський шлях до Індії у 1498 році. Це відкриття сприяло розвитку торгівлі між Європою та Азією.</p>
+            </div>
+            <div class="explorer">
+                <h3>Фернан Магеллан</h3>
+                <p>Фернан Магеллан (1480-1521) - португальський мореплавець, який очолив першу навколосвітню експедицію. Його подорож довела, що Земля є круглою.</p>
+            </div>
+            <div class="explorer">
+                <h3>Джеймс Кук</h3>
+                <p>Джеймс Кук (1728-1779) - англійський мореплавець, який дослідив східне узбережжя Австралії та проголосив його частиною Британської імперії. Він також досліджував Тихий океан та Антарктику.</p>
+            </div>
+            <div class="explorer">
+                <h3>Енріке Мореплавець</h3>
+                <p>Енріке Мореплавець (1394-1460) - португальський принц, який сприяв розвитку мореплавства та досліджень. Він заснував школу мореплавства в Сагреші та підтримував експедиції вздовж узбережжя Африки.</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
