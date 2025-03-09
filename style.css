@@ -22,6 +22,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    flex-flow: wrap;
     background-color: #444;
 }
 nav a {
@@ -93,4 +94,20 @@ nav a:hover {
 }
 #toggle-map:hover {
     background-color: #555;
+}
+
+
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+ 
+    }
+    nav a {
+        padding: 5px;
+    }
 }
