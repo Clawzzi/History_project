@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         marker.bindPopup(location.content);
     });
 
-    // Додаємо плавну прокрутку при натисканні на навігаційні посилання
+
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetPosition = targetElement.offsetTop;
             const startPosition = window.pageYOffset;
             const distance = targetPosition - startPosition;
-            const duration = 1000; // Тривалість анімації в мілісекундах
+            const duration = 1000; 
             let start = null;
 
             window.requestAnimationFrame(step);
@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Ініціалізація таймлайну
     var timelineData = {
         "title": {
             "media": {
@@ -199,13 +198,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var timeline = new TL.Timeline('timeline-embed', timelineData);
 
-    // Додаємо функціонал для кнопки показати/сховати карту
+    
     var mapContainer = document.getElementById('map');
     var toggleMapButton = document.getElementById('toggle-map');
     toggleMapButton.addEventListener('click', function() {
         if (mapContainer.style.display === 'none') {
             mapContainer.style.display = 'block';
-            map.invalidateSize(); // Оновлюємо розмір карти після показу
+            map.invalidateSize(); 
         } else {
             mapContainer.style.display = 'none';
         }
